@@ -13,7 +13,7 @@ JSON
                                                                git push -u origin master
 
                           
- 5. Клонировать репозиторий JSON на локальный компьютер.  ===  git clone "https://github.com/chaychits/JSON.git" 
+ 5. Клонировать репозиторий JSON на локальный компьютер.  ===  git clone "https://github.com/chaychits/JSON.git" (в случае, если репозиторий создается через веб-сайт)
 
  6. Внутри локального JSON создать файл “new.json”.       ===  cd JSON 
  							       touch new.json
@@ -27,12 +27,11 @@ JSON
  10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. 
                                                           ===  vim new.json
       i					    
-      { "Фамилия" : "Чайчиц",
-        "Имя" : "Марина",
-        "Отчество" : "Александровна",
-        "Возраст" : 34,
-        "Количество домашних животных" : 1,
-        "Будущая желаемая зарплата" :  "700 долларов"
+      { "Surname" : "Chaichits",
+        "Name" : "Marina",
+        "Age" : 34,
+        "Number_of_pets" : 1,
+        "Future_disired_salary" :  "700_dollars"
       }
       esc  
       :wq
@@ -44,11 +43,11 @@ JSON
  12. Создать файл preferences.json                       === touch preferences.json
  13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.                                                          === vim preferences.json
     i
-    { "Любимыйй фильм" : "Знакомьтесь Джо Блэк",
-      "Любимый сериал" : "Друзья",
-      "Любимая еда" : "Морепродукты",
-      "Любимое время года" : "Лето",
-      "Сторона которую хотели бы посетить" : "США"
+    { "Favourite_movie" : "Meet Joe Black",
+      "Favourite_serial" : "Friends",
+      "Favourite_food" : "Seafood",
+      "Favourite_season" : "Summer",
+      "The_country_I_want_to_visit" : "The USA"
     }
     esc 
     :wq
@@ -57,23 +56,28 @@ JSON
                                                           === vim sklls.json
     i
     { "Course" : "QA",
-      "Skills" : "SQL, Postman, Github"
+      "Skills" : "SQL, Postman, Github, Python, Dev Tools, VPN, Mobile testing."
     }
     esc
     :wqg
 
- 15. Отправить сразу 2 файла на внешний репозиторий.    === git add preferences.json sklls.json
-             						 git commit -m "preferences.json sklls.json"
-							 git push
+ 15. Отправить сразу 2 файла на внешний репозиторий.    ===   git add preferences.json sklls.json
+             						      git commit -m "preferences.json sklls.json"
+							      git push
+
  16. На веб интерфейсе создать файл bug_report.json.    ===  push the button - create new file
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === push the button - commit new file
  18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. === push the button - edit this file
 
-    { "Summary" : "When you click on the Send a message button in the completed feedback form, nothing happens. Similar behavior if the form is not filled out.",
+    { "ID" : 1,
+      "Title" : "When you click on the Send message button in the feedback form, the message is not sent.",
+      "Summary" : "When you click on the Send a message button in the completed feedback form, nothing happens. Similar behavior if the form is not filled out.",
       "Steps" : "1. Fill in the feedback form fields, 2. Click on the Send message button",
-      "Expected result" : "The message is sent or the system reports that it cannot be sent.",
-      "Actual result" : "The message is not sent, there is no error about sending. After pressing the button, nothing happens."
+      "Expected_result" : "The message is sent or the system reports that it cannot be sent.",
+      "Actual_result" : "The message is not sent, there is no error about sending. After pressing the button, nothing happens.",
+      "Severity" : "Major"
     }
+
 
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  ===  push the button - commit changes
  20. Синхронизировать внешний и локальный репозиторий JSON === git pull 
@@ -87,7 +91,8 @@ XML
                                                               git remote add origin git@github.com:chaychits/XML.git
                                                               curl -u 'chaychits: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' https://api.github.com/user/repos -d '{"name":"XML"}'
                                                               git push -u origin master
- 22. Клонировать репозиторий XML на локальный компьютер.  ===  git clone https://github.com/chaychits/XML.git
+
+ 22. Клонировать репозиторий XML на локальный компьютер.  ===  git clone https://github.com/chaychits/XML.git (в случае, если репозиторий создается через веб-сайт)
  23. Внутри локального XML создать файл “new.xml”.        ===  touch new.xml
  24. Добавить файл под гит.                               ===  git add new.xml
  25. Закоммитить файл.                                    ===  git commit -m "new.xml"
@@ -98,12 +103,11 @@ i
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
 	<website>
-	  <Фамилия> Чайчиц </Фамилия> 
-          <Имя> Марина </Имя>
-          <Отчество> Александровна </Отчество>
-          <Возраст> 34 </Возраст>
-          <Количество_домашних_животных> 1 </Количество_домашних_животных> 
-          <Будущая_желаемая_зарплата> 700 $ </Будущая_желаемая_зарплата>
+	  <Surname> Chaichits </Surname> 
+          <Name> Marina </Name>
+          <Age> 34 </Age>
+          <Number_of_pets> 1 </Number_of_pets> 
+          <Future_disired_salary> 700 $ </Future_disired_salary>
 	</website>
 </result>
 esc
@@ -112,16 +116,16 @@ esc
                                                              git commit -m "4"
                                                              git push
  29. Создать файл preferences.xml                        === touch preferences.xml
- 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.                                                           ===  vim preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.                                                              ===  vim preferences.xml
 i
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
 	<website>
-	   <Любимыйй_фильм> Знакомьтесь Джо Блэк </Любимыйй_фильм>
-           <Любимый_сериал> Друзья </Любимый_сериал>
-           <Любимая_еда> Морепродукты </Любимая_еда>
-           <Любимое_время_года> Лето </Любимое_время_года>
-           <Сторона_которую_хотели_бы_посетить> США </Сторона_которую_хотели_бы_посетить>
+	   <Favourite_movie> Meet Joe Black </Favourite_movie>
+           <Favourite_serial> Friends </Favourite_serial>
+           <Favourite_food> Seafood </Favourite_food>
+           <Favourite_season> Summer </Favourite_season>
+           <The_country_I_want_to_visit> The USA </The_country_I_want_to_visit>
 	</website>
 </result>
 esc:wq
@@ -131,7 +135,7 @@ esc:wq
 <result>
 	<website>
 	  <Course> QA </Course>
-          <Skills> SQL, Postman, Github </Skills>
+          <Skills> SQL, Postman, Github, Python, Dev Tools, VPN, Mobile testing </Skills>
 	</website>
 </result> 
  32. Сделать коммит в одну строку.  ===  git add sklls.xml preferences.xml | git commit -m "1" 
@@ -146,12 +150,18 @@ esc:wq
 <?xml version="1.0" encoding="UTF-8"?>
 <result>
 	<website>
+          <ID> 001 </ID>
+          <Title> When you click on the "Send message" button in the feedback form, the message is not sent. </Title>
 	  <Summary> When you click on the Send a message button in the completed feedback form, nothing happens. Similar behavior if the form is not filled out. </Summary>
+          <Environment> Windows 10, Google Chrome Version 97.0.4692.71 (Official build), (64 bit) </Environment>
           <Steps> 1. Fill in the feedback form fields, 2. Click on the Send message button </Steps>
           <Expected_result> The message is sent or the system reports that it cannot be sent. </Expected_result>
-          <Actual_result> The message is not sent, there is no error about sending. After pressing the button, nothing happens. </Actual_result> 
+          <Actual_result> The message is not sent, there is no error about sending. After pressing the button, nothing happens. </Actual_result>
+          <Severity> Major </Severity> 
 	</website>
 </result> 
+
+
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  ===  push button - commit changes
 
  38. Синхронизировать внешний и локальный репозиторий XML ===  git pull
@@ -165,49 +175,53 @@ TXT
                                                         curl -u 'chaychits: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' https://api.github.com/user/repos -d '{"name":"TXT"}'
                                                         git push -u origin master
 
- 2. Клонировать репозиторий TXT на локальный компьютер.  ==== git clone https://github.com/chaychits/TXT.git
+ 2. Клонировать репозиторий TXT на локальный компьютер.  ====  git clone https://github.com/chaychits/TXT.git (в случае, если репозиторий создается через веб-сайт)
 
  3. Внутри локального TXT создать файл “new.txt”.        ====  cd TXT
-						              touch new.txt
+						               touch new.txt
 
- 4. Добавить файл под гит.                               ==== git add new.txt
+ 4. Добавить файл под гит.                               ====  git add new.txt
 
- 5. Закоммитить файл.                                    ==== commit -m "new.txt"
+ 5. Закоммитить файл.                                    ====  commit -m "new.txt"
 
  6. Отправить файл на внешний GitHub репозиторий.        ====  git push
 
  7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.  
-                                                        ===  vim new.txt 
+                                                         ===  vim new.txt 
 i                         Чайчиц Марина Александровна, 32 года, 1 домашее животное, 700 $ будущая желаемая зарплата.
 esc :wq
- 8. Отправить изменения на внешний репозиторий.          ===   git commit -am "a"
-                                                               git push
+ 8. Отправить изменения на внешний репозиторий.          ====   git commit -am "a"
+                                                                git push
 
  9. Создать файл preferences.txt                         ====  touch preferences.txt
 
- 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.                                                           ====  vim preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.                                                             ====  vim preferences.txt
   i
 Любимый фильм - Знакомьтесь Джо Блэк, любимый сериал - Друзья, любимая еда - морепродукты, любимое время года - лето, сторона которую хотели бы посетить - США.
   esc :wq
 
  11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT  === touch sklls.txt
 
- 12. Сделать коммит в одну строку.                       === git add preferences.txt sklls.txt | git commit -m "add preferences.txt sklls.txt" 
+ 12. Сделать коммит в одну строку.                       ====  git add preferences.txt sklls.txt | git commit -m "add preferences.txt sklls.txt" 
 
- 13. Отправить сразу 2 файла на внешний репозиторий.     ===  git push
+ 13. Отправить сразу 2 файла на внешний репозиторий.     ====  git push
 
- 14. На веб интерфейсе создать файл bug_report.txt.      ==== push the button - create new file
+ 14. На веб интерфейсе создать файл bug_report.txt.      ====  push the button - create new file
 
- 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  === push the button - commit changes
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  ==== push the button - commit changes
 
  16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.  === push the button - edit the file 
 
+ID  -  001
+Title  -  When you click on the "Send message" button in the feedback form, the message is not sent.
 Summary -  When you click on the Send a message button in the completed feedback form, nothing happens. Similar behavior if the form is not filled out.
+Environment - Windows 10, Google Chrome Version 97.0.4692.71 (Official build), (64 bit)
 Steps - 1. Fill in the feedback form fields
         2. Click on the Send message button.
 Expected result - The message is sent or the system reports that it cannot be sent.
 Actual result - The message is not sent, there is no error about sending. After pressing the button, nothing happens.
+Severity - Major
 
- 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  ===  push the button - commit changes
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  ====  push the button - commit changes
 
- 18. Синхронизировать внешний и локальный репозиторий TXT === git pull
+ 18. Синхронизировать внешний и локальный репозиторий TXT ==== git pull
