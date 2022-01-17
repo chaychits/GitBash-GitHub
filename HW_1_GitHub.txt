@@ -56,7 +56,7 @@ JSON
                                                           === vim sklls.json
     i
     { "Course" : "QA",
-      "Skills" : "SQL, Postman, Github, Python, Dev Tools, VPN, Mobile testing."
+      "Skills" : ["SQL, Postman, Github, Python, Dev Tools, VPN, Mobile testing."]
     }
     esc
     :wqg
@@ -72,7 +72,7 @@ JSON
     { "ID" : 1,
       "Title" : "When you click on the Send message button in the feedback form, the message is not sent.",
       "Summary" : "When you click on the Send a message button in the completed feedback form, nothing happens. Similar behavior if the form is not filled out.",
-      "Steps" : "1. Fill in the feedback form fields, 2. Click on the Send message button",
+      "Steps" : ["1. Fill in the feedback form fields, 2. Click on the Send message button"],
       "Expected_result" : "The message is sent or the system reports that it cannot be sent.",
       "Actual_result" : "The message is not sent, there is no error about sending. After pressing the button, nothing happens.",
       "Severity" : "Major"
