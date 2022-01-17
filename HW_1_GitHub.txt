@@ -201,6 +201,12 @@ esc :wq
   esc :wq
 
  11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT  === touch sklls.txt
+                                                                                                            vim sklls.txt
+													    i 
+Course - QA
+Skills - SQL, Postman, Github, Python, Dev Tools, VPN, Mobile testing.
+esc :wq
+
 
  12. Сделать коммит в одну строку.                       ====  git add preferences.txt sklls.txt | git commit -m "add preferences.txt sklls.txt" 
 
